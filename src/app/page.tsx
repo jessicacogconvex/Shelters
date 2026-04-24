@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Shelter Directory</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">Shelter Contact Information</h1>
 
       {submitted ? (
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6 space-y-5">
-          <h2 className="text-xl font-semibold text-gray-800">Add a Shelter</h2>
+          <h2 className="text-xl font-semibold text-gray-800">Shelter Contact Information</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
