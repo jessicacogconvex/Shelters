@@ -5,7 +5,7 @@ import { api } from "../../convex/_generated/api";
 import { FormEvent, useState } from "react";
 
 const checklistItems = [
-  { key: "esaInformation", label: "ESA Information" },
+  { key: "esaInformation", label: "ESA Information Pamphlet" },
   { key: "esaLetterOnline", label: "How to Get an ESA Letter Online Safely" },
   { key: "blogPost", label: "Blog Post" },
   { key: "resourcesPage", label: "Resources Page Link" },

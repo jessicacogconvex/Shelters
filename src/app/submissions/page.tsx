@@ -4,7 +4,7 @@ import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 
 const checklistItems = [
-  { key: "esaInformation", label: "ESA Information" },
+  { key: "esaInformation", label: "ESA Information Pamphlet" },
   { key: "esaLetterOnline", label: "How to Get an ESA Letter Online Safely" },
   { key: "blogPost", label: "Blog Post" },
   { key: "resourcesPage", label: "Resources Page Link" },
