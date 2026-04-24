@@ -23,7 +23,8 @@
       "Bash(lsof -ti:3210)",
       "Bash(xargs kill:*)",
       "Bash(lsof -ti:6790)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
