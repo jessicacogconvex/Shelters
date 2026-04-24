@@ -6,7 +6,7 @@
     "dev": "npm-run-all --parallel dev:frontend dev:backend",
     "dev:frontend": "next dev",
     "dev:backend": "npx convex dev",
-    "build": "npx convex codegen && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx:*)",
+      "Bash(npm --version)",
+      "Read(//usr/local/bin/**)",
+      "Bash(brew list:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(command -v fnm nvm volta)",
+      "Bash(/opt/homebrew/bin/brew --version)",
+      "Bash(/usr/local/bin/brew --version)",
+      "Bash(brew --version)",
+      "Bash(/opt/homebrew/bin/node --version)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(brew install:*)",
+      "Bash(gh auth:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo:*)",
+      "Bash(git push:*)",
+      "Bash(lsof -ti:3210)",
+      "Bash(xargs kill:*)",
+      "Bash(lsof -ti:6790)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
