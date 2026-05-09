@@ -8,6 +8,17 @@ export const list = query({
   },
 });
 
+export const listProtected = query({
+  args: { password: v.string() },
+  handler: async (ctx, args) => {
+    const expected = process.env.ADMIN_PASSWORD;
+    if (!expected || args.password !== expected) {
+      throw new Error("Unauthorized");
+    }
+    return await ctx.db.query("shelters").order("desc").collect();
+  },
+});
+
 export const add = mutation({
   args: {
     name: v.string(),
