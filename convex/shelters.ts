@@ -46,3 +46,18 @@ export const remove = mutation({
     await ctx.db.delete(args.id);
   },
 });
+
+export const updateNotes = mutation({
+  args: {
+    password: v.string(),
+    id: v.id("shelters"),
+    notes: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const expected = process.env.ADMIN_PASSWORD;
+    if (!expected || args.password !== expected) {
+      throw new Error("Unauthorized");
+    }
+    await ctx.db.patch(args.id, { notes: args.notes });
+  },
+});
